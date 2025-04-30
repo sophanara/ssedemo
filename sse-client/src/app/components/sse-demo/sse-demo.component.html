@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>SSE Demo</h1>
+  <div class="client-info">
+    <p>Client ID: {{ clientId }}</p>
+  </div>
+  
+  <div class="messages-container">
+    <h2>Received Messages</h2>
+    <div class="messages-list">
+      <div *ngFor="let message of messages" class="message">
+        {{ message }}
+      </div>
+    </div>
+  </div>
+</div> 
